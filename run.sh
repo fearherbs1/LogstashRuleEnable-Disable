@@ -14,17 +14,7 @@ read eord
 if [ $eord == 'e' ]
   then
     echo Enabing rules
-elif [ $2 == 'd' ]
-  then
-    echo Disabling rules
-else
-    echo  Invalid entry
-    exit 100
-fi
-
-if [ $eord == 'e']
-  then
-    read -p 'How many rules do you want to enable?' rulecountE
+	    read -p 'How many rules do you want to enable?' rulecountE
     ruleE=1
     while [ $ruleE -le $rulecountE ]
     do
@@ -33,4 +23,10 @@ if [ $eord == 'e']
         ((ruleE++))
    done
    echo "${ruleE_array[*]}"
+elif [ $2 == 'd' ]
+  then
+    echo Disabling rules
+else
+    echo  Invalid entry
+    exit 100
 fi
