@@ -23,7 +23,7 @@ if [ $eord == 'e' ]
         ruleE_array[$ruleE]="${rule}"
         ((ruleE++))
    done
-   echo "${ruleE_array[*]}"
+   echo "${ruleE_array[*]}" Are the selected rules
 elif [ $2 == 'd' ]
   then
     echo Disabling rules
